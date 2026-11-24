@@ -1,0 +1,928 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Unit 2 | Web Technology</title>
+
+    <link rel="stylesheet" href="style/unit2.css">
+</head>
+
+<body>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+        <div class="logo">
+            <div class="logo-icon">WT</div>
+            <div>
+                <h2>WebTech</h2>
+                <p>Study Notes</p>
+            </div>
+        </div>
+
+        <nav>
+
+            <p class="nav-heading">NAVIGATION</p>
+
+            <a href="index.html" class="nav-link">
+                <span>⌂</span> Homepage
+            </a>
+
+            <a href="#overview" class="nav-link active">
+                <span>02</span> Overview
+            </a>
+
+            <p class="nav-heading">UNIT 2 CONTENTS</p>
+
+            <a href="#topic1" class="nav-link">01. JavaScript Introduction</a>
+            <a href="#topic2" class="nav-link">02. JavaScript Objects</a>
+            <a href="#topic3" class="nav-link">03. Dynamic HTML</a>
+            <a href="#topic4" class="nav-link">04. Lists, Tables & Images</a>
+            <a href="#topic5" class="nav-link">05. Forms & Frames</a>
+            <a href="#topic6" class="nav-link">06. CSS</a>
+            <a href="#topic7" class="nav-link">07. Document Type Definition</a>
+            <a href="#topic8" class="nav-link">08. XML Schemas</a>
+            <a href="#topic9" class="nav-link">09. Object Models</a>
+            <a href="#topic10" class="nav-link">10. Presenting XML</a>
+            <a href="#topic11" class="nav-link">11. DOM and SAX</a>
+
+        </nav>
+
+        <div class="sidebar-footer">
+            <p>SUBJECT</p>
+            <h3>Web Technology</h3>
+            <span>Semester V</span>
+        </div>
+
+    </aside>
+
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+
+
+        <!-- TOP HEADER -->
+        <header class="topbar">
+
+            <div>
+                <p class="breadcrumb">
+                    <a href="index.html">Home</a> / Unit 2
+                </p>
+
+                <h2>Web Technology</h2>
+            </div>
+
+            <div class="top-tag">SEMESTER V</div>
+
+        </header>
+
+
+        <!-- UNIT INTRODUCTION -->
+        <section class="hero" id="overview">
+
+            <div class="hero-content">
+
+                <span class="hero-label">
+                    UNIT 02 • COURSE MATERIAL
+                </span>
+
+                <h1>JavaScript,<br>
+                    <span>CSS & XML</span>
+                </h1>
+
+                <p>
+                    Learn JavaScript programming, Dynamic HTML,
+                    CSS styling, XML structures, object models
+                    and XML processing techniques.
+                </p>
+
+                <div class="hero-info">
+                    <span>11 Topics</span>
+                    <span>Web Technology</span>
+                    <span>Semester V</span>
+                </div>
+
+            </div>
+
+            <div class="hero-visual">
+                <div class="code-icon">&lt;/&gt;</div>
+                <div class="floating-item item1">JS</div>
+                <div class="floating-item item2">CSS</div>
+                <div class="floating-item item3">XML</div>
+            </div>
+
+        </section>
+
+
+        <!-- TABLE OF CONTENTS -->
+        <section class="toc-section">
+
+            <div class="section-heading">
+                <span class="section-label">QUICK NAVIGATION</span>
+                <h2>Table of Contents</h2>
+                <p>Select a topic to directly access its notes.</p>
+            </div>
+
+            <div class="toc-grid">
+
+                <a href="#topic1" class="toc-item">
+                    <span>01</span>
+                    Introduction to JavaScript
+                    <b>→</b>
+                </a>
+
+                <a href="#topic2" class="toc-item">
+                    <span>02</span>
+                    Objects in JavaScript
+                    <b>→</b>
+                </a>
+
+                <a href="#topic3" class="toc-item">
+                    <span>03</span>
+                    Dynamic HTML with JavaScript
+                    <b>→</b>
+                </a>
+
+                <a href="#topic4" class="toc-item">
+                    <span>04</span>
+                    Lists, Tables and Images
+                    <b>→</b>
+                </a>
+
+                <a href="#topic5" class="toc-item">
+                    <span>05</span>
+                    Forms and Frames
+                    <b>→</b>
+                </a>
+
+                <a href="#topic6" class="toc-item">
+                    <span>06</span>
+                    Cascading Style Sheets (CSS)
+                    <b>→</b>
+                </a>
+
+                <a href="#topic7" class="toc-item">
+                    <span>07</span>
+                    Document Type Definition (DTD)
+                    <b>→</b>
+                </a>
+
+                <a href="#topic8" class="toc-item">
+                    <span>08</span>
+                    XML Schemas
+                    <b>→</b>
+                </a>
+
+                <a href="#topic9" class="toc-item">
+                    <span>09</span>
+                    Object Models
+                    <b>→</b>
+                </a>
+
+                <a href="#topic10" class="toc-item">
+                    <span>10</span>
+                    Presenting XML Documents
+                    <b>→</b>
+                </a>
+
+                <a href="#topic11" class="toc-item">
+                    <span>11</span>
+                    XML Processors: DOM and SAX
+                    <b>→</b>
+                </a>
+
+            </div>
+
+        </section>
+
+
+       <!-- SINGLE NOTES SECTION -->
+<section class="topic-card" id="unit-notes">
+
+    <div class="topic-content">
+
+    <h2>1. Introduction to JavaScript</h2>
+
+    <p>JavaScript is a lightweight, interpreted programming language mainly used to make web pages interactive and dynamic. It was developed by <strong>Brendan Eich in 1995</strong>. JavaScript works with HTML and CSS to create interactive websites.</p>
+
+    <p>HTML provides the structure of a webpage, CSS controls its appearance, and JavaScript adds functionality such as animations, form validation, button clicks, and dynamic content updates.</p>
+
+    <h3>Features of JavaScript</h3>
+    <ol>
+        <li><strong>Lightweight:</strong> JavaScript requires fewer resources and is easy to execute.</li>
+        <li><strong>Interpreted:</strong> It can be executed directly by a JavaScript engine.</li>
+        <li><strong>Dynamic:</strong> It allows webpage content to change without reloading the page.</li>
+        <li><strong>Object-Based:</strong> It supports objects and object-oriented programming concepts.</li>
+        <li><strong>Platform Independent:</strong> It runs on different operating systems and browsers.</li>
+        <li><strong>Event-Driven:</strong> It can respond to user actions such as clicks, typing, and mouse movements.</li>
+    </ol>
+
+    <h3>Uses of JavaScript</h3>
+    <ul>
+        <li>Creating interactive web pages.</li>
+        <li>Validating user input in forms.</li>
+        <li>Creating animations and visual effects.</li>
+        <li>Updating webpage content dynamically.</li>
+        <li>Developing web applications and games.</li>
+    </ul>
+
+    <h3>Example of JavaScript</h3>
+    <pre><code>&lt;html&gt;
+&lt;body&gt;
+    &lt;h2&gt;JavaScript Example&lt;/h2&gt;
+    &lt;button onclick="alert('Hello World')"&gt;
+        Click Me
+    &lt;/button&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+    <hr>
+
+    <h2>2. Objects in JavaScript</h2>
+
+    <p>An object in JavaScript is a collection of related data and functions stored as properties and methods. Properties represent the characteristics of an object, while methods represent the actions that an object can perform.</p>
+
+    <p>JavaScript objects are commonly created using curly braces <code>{}</code> and store information in key-value pairs.</p>
+
+    <h3>Creating an Object</h3>
+    <pre><code>let student = {
+    name: "Rahul",
+    age: 20,
+    course: "BCA",
+
+    display: function() {
+        return this.name;
+    }
+};
+
+console.log(student.name);
+console.log(student.age);
+console.log(student.display());</code></pre>
+
+    <h3>Types of Object Properties</h3>
+    <ul>
+        <li><strong>Properties:</strong> Store information about an object.</li>
+        <li><strong>Methods:</strong> Functions defined inside an object.</li>
+    </ul>
+
+    <h3>Ways to Create Objects</h3>
+    <ol>
+        <li><strong>Object Literal:</strong> Creating an object using curly braces.</li>
+        <li><strong>Using new Object():</strong> Creating an object using the built-in Object constructor.</li>
+        <li><strong>Constructor Function:</strong> Creating multiple objects using a constructor function.</li>
+        <li><strong>Object.create():</strong> Creating a new object with a specified prototype.</li>
+    </ol>
+
+    <h3>Advantages of Objects</h3>
+    <ul>
+        <li>Organize related data in one place.</li>
+        <li>Improve code reusability.</li>
+        <li>Make programs easier to manage.</li>
+        <li>Support object-oriented programming.</li>
+    </ul>
+
+    <hr>
+
+    <h2>3. Dynamic HTML with JavaScript</h2>
+
+    <p>Dynamic HTML (DHTML) is a combination of HTML, CSS, JavaScript, and the DOM (Document Object Model) used to create interactive and dynamic web pages. It allows webpage content, structure, and style to change without reloading the entire page.</p>
+
+    <p>JavaScript plays an important role in DHTML by responding to user events and modifying HTML elements and CSS properties dynamically.</p>
+
+    <h3>Main Components of DHTML</h3>
+    <ol>
+        <li><strong>HTML:</strong> Provides the basic structure of a webpage.</li>
+        <li><strong>CSS:</strong> Controls the design, layout, and appearance.</li>
+        <li><strong>JavaScript:</strong> Adds interactivity and dynamic functionality.</li>
+        <li><strong>DOM:</strong> Allows JavaScript to access and modify webpage elements.</li>
+    </ol>
+
+    <h3>Features of DHTML</h3>
+    <ul>
+        <li>Changes webpage content dynamically.</li>
+        <li>Provides animations and visual effects.</li>
+        <li>Responds to user actions and events.</li>
+        <li>Changes the style of webpage elements.</li>
+        <li>Reduces the need for complete page reloading.</li>
+    </ul>
+
+    <h3>Example of DHTML</h3>
+    <pre><code>&lt;html&gt;
+&lt;body&gt;
+
+&lt;p id="demo"&gt;Welcome to JavaScript&lt;/p&gt;
+
+&lt;button onclick="changeText()"&gt;
+    Change Text
+&lt;/button&gt;
+
+&lt;script&gt;
+function changeText() {
+    document.getElementById("demo").innerHTML =
+    "Content Changed Dynamically!";
+}
+&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+    <hr>
+
+    <h2>4. Lists in JavaScript and HTML</h2>
+
+    <p>Lists are used to display related items in an organized manner on a webpage. HTML provides different types of lists, and JavaScript can be used to create, modify, and update list items dynamically.</p>
+
+    <h3>Types of HTML Lists</h3>
+
+    <ol>
+        <li><strong>Ordered List:</strong> Displays items in a numbered or alphabetical sequence using the <code>&lt;ol&gt;</code> tag.</li>
+        <li><strong>Unordered List:</strong> Displays items using bullets through the <code>&lt;ul&gt;</code> tag.</li>
+        <li><strong>Description List:</strong> Displays terms and their descriptions using <code>&lt;dl&gt;</code>, <code>&lt;dt&gt;</code>, and <code>&lt;dd&gt;</code> tags.</li>
+    </ol>
+
+    <h3>Example of Lists</h3>
+    <pre><code>&lt;h3&gt;Programming Languages&lt;/h3&gt;
+
+&lt;ul&gt;
+    &lt;li&gt;Java&lt;/li&gt;
+    &lt;li&gt;Python&lt;/li&gt;
+    &lt;li&gt;JavaScript&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+    &lt;li&gt;HTML&lt;/li&gt;
+    &lt;li&gt;CSS&lt;/li&gt;
+    &lt;li&gt;JavaScript&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+
+    <h3>Dynamic List Using JavaScript</h3>
+    <p>JavaScript can add new items to an existing list using DOM methods such as <code>createElement()</code> and <code>appendChild()</code>.</p>
+
+    <pre><code>&lt;ul id="myList"&gt;
+    &lt;li&gt;Java&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;button onclick="addItem()"&gt;Add Item&lt;/button&gt;
+
+&lt;script&gt;
+function addItem() {
+    let item = document.createElement("li");
+    item.textContent = "Python";
+    document.getElementById("myList").appendChild(item);
+}
+&lt;/script&gt;</code></pre>
+
+    <hr>
+
+    <h2>5. Tables in JavaScript and HTML</h2>
+
+    <p>HTML tables are used to display data in rows and columns. They are useful for presenting information such as student records, marks, employee details, and product information. JavaScript can dynamically create, update, and delete table rows and cells.</p>
+
+    <h3>Important Table Tags</h3>
+    <ul>
+        <li><strong>&lt;table&gt;:</strong> Defines a table.</li>
+        <li><strong>&lt;tr&gt;:</strong> Defines a table row.</li>
+        <li><strong>&lt;th&gt;:</strong> Defines a table heading.</li>
+        <li><strong>&lt;td&gt;:</strong> Defines a table cell.</li>
+        <li><strong>&lt;thead&gt;:</strong> Groups the header content.</li>
+        <li><strong>&lt;tbody&gt;:</strong> Groups the main table content.</li>
+        <li><strong>&lt;tfoot&gt;:</strong> Groups the footer content.</li>
+    </ul>
+
+    <h3>Example of HTML Table</h3>
+    <pre><code>&lt;table border="1"&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Name&lt;/th&gt;
+        &lt;th&gt;Age&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Rahul&lt;/td&gt;
+        &lt;td&gt;20&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Aman&lt;/td&gt;
+        &lt;td&gt;21&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+
+    <h3>Uses of JavaScript with Tables</h3>
+    <ul>
+        <li>Adding new rows and columns.</li>
+        <li>Updating existing table data.</li>
+        <li>Deleting table rows.</li>
+        <li>Sorting and filtering information.</li>
+        <li>Validating table data.</li>
+    </ul>
+
+    <hr>
+
+    <h2>6. Images in JavaScript and HTML</h2>
+
+    <p>Images are an important part of web pages because they make content more attractive and understandable. HTML uses the <code>&lt;img&gt;</code> tag to display images, while JavaScript can dynamically change image sources, dimensions, and visibility.</p>
+
+    <h3>Important Image Attributes</h3>
+    <ul>
+        <li><strong>src:</strong> Specifies the path or URL of the image.</li>
+        <li><strong>alt:</strong> Provides alternative text if the image cannot load.</li>
+        <li><strong>width:</strong> Sets the width of an image.</li>
+        <li><strong>height:</strong> Sets the height of an image.</li>
+    </ul>
+
+    <h3>Example of HTML Image</h3>
+    <pre><code>&lt;img src="image.jpg"
+     alt="Sample Image"
+     width="300"
+     height="200"&gt;</code></pre>
+
+    <h3>Changing Images Using JavaScript</h3>
+    <p>JavaScript can change an image dynamically by modifying its <code>src</code> property.</p>
+
+    <pre><code>&lt;img id="photo" src="image1.jpg" width="200"&gt;
+
+&lt;button onclick="changeImage()"&gt;
+    Change Image
+&lt;/button&gt;
+
+&lt;script&gt;
+function changeImage() {
+    document.getElementById("photo").src =
+    "image2.jpg";
+}
+&lt;/script&gt;</code></pre>
+
+    <hr>
+
+    <h2>7. Forms in JavaScript and HTML</h2>
+
+    <p>HTML forms are used to collect information from users, such as names, email addresses, passwords, feedback, and other details. JavaScript is used to validate user input and handle form submission.</p>
+
+    <h3>Important HTML Form Elements</h3>
+    <ul>
+        <li><strong>&lt;form&gt;:</strong> Defines an HTML form.</li>
+        <li><strong>&lt;input&gt;:</strong> Creates input fields.</li>
+        <li><strong>&lt;label&gt;:</strong> Defines labels for form controls.</li>
+        <li><strong>&lt;textarea&gt;:</strong> Creates a multi-line text field.</li>
+        <li><strong>&lt;select&gt;:</strong> Creates a dropdown list.</li>
+        <li><strong>&lt;option&gt;:</strong> Defines dropdown options.</li>
+        <li><strong>&lt;button&gt;:</strong> Creates a clickable button.</li>
+    </ul>
+
+    <h3>Common Input Types</h3>
+    <ul>
+        <li>Text</li>
+        <li>Password</li>
+        <li>Email</li>
+        <li>Number</li>
+        <li>Radio</li>
+        <li>Checkbox</li>
+        <li>Date</li>
+        <li>Submit</li>
+    </ul>
+
+    <h3>Example of HTML Form</h3>
+    <pre><code>&lt;form&gt;
+    &lt;label&gt;Name:&lt;/label&gt;
+    &lt;input type="text" id="name"&gt;
+
+    &lt;label&gt;Email:&lt;/label&gt;
+    &lt;input type="email" id="email"&gt;
+
+    &lt;button type="button"
+    onclick="showMessage()"&gt;
+        Submit
+    &lt;/button&gt;
+&lt;/form&gt;
+
+&lt;script&gt;
+function showMessage() {
+    alert("Form Submitted Successfully!");
+}
+&lt;/script&gt;</code></pre>
+
+    <h3>Form Validation Using JavaScript</h3>
+    <p>Form validation is the process of checking whether the information entered by a user is correct and complete before submitting it. JavaScript can validate required fields, email formats, passwords, and other input values.</p>
+
+    <h3>Advantages of Form Validation</h3>
+    <ul>
+        <li>Prevents incomplete information.</li>
+        <li>Reduces incorrect user input.</li>
+        <li>Improves data quality.</li>
+        <li>Provides immediate feedback to users.</li>
+    </ul>
+
+    <hr>
+
+    <h2>8. Frames in HTML</h2>
+
+    <p>Frames were used in older HTML versions to divide a browser window into multiple independent sections, where each section could display a different HTML document. They allowed users to view multiple pages within the same browser window.</p>
+
+    <h3>Types of Frames</h3>
+    <ol>
+        <li><strong>Frameset:</strong> Divides the browser window into multiple frames.</li>
+        <li><strong>Inline Frame (iframe):</strong> Displays another webpage or document inside the current webpage.</li>
+    </ol>
+
+    <h3>Important Frame Tags</h3>
+    <ul>
+        <li><strong>&lt;frameset&gt;:</strong> Defines the layout of multiple frames in older HTML.</li>
+        <li><strong>&lt;frame&gt;:</strong> Defines an individual frame in older HTML.</li>
+        <li><strong>&lt;iframe&gt;:</strong> Embeds another webpage within the current page.</li>
+    </ul>
+
+    <h3>Example of Iframe</h3>
+    <pre><code>&lt;iframe
+    src="https://example.com"
+    width="500"
+    height="300"
+    title="Example Website"&gt;
+&lt;/iframe&gt;</code></pre>
+
+    <h3>Advantages of Frames</h3>
+    <ul>
+        <li>Allow multiple documents to be displayed together.</li>
+        <li>Can display external content inside a webpage.</li>
+        <li>Useful for embedding maps, videos, and other websites.</li>
+    </ul>
+
+    <p><strong>Note:</strong> The old <code>&lt;frameset&gt;</code> and <code>&lt;frame&gt;</code> elements are obsolete in HTML5. The <code>&lt;iframe&gt;</code> element is still supported.</p>
+
+    <hr>
+
+    <h2>9. CSS (Cascading Style Sheets)</h2>
+
+    <p>CSS is a stylesheet language used to control the appearance and layout of HTML documents. It defines how webpage elements should look, including their colors, fonts, sizes, spacing, borders, and positioning.</p>
+
+    <p>CSS separates the presentation of a webpage from its structure, making websites easier to design, maintain, and update.</p>
+
+    <h3>Types of CSS</h3>
+    <ol>
+        <li><strong>Inline CSS:</strong> CSS is written directly inside an HTML element using the style attribute.</li>
+        <li><strong>Internal CSS:</strong> CSS is written inside the <code>&lt;style&gt;</code> tag in the HTML document's head section.</li>
+        <li><strong>External CSS:</strong> CSS is written in a separate .css file and linked to the HTML document.</li>
+    </ol>
+
+    <h3>Example of CSS</h3>
+    <pre><code>&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt;
+    h1 {
+        color: blue;
+        text-align: center;
+    }
+
+    p {
+        font-size: 18px;
+    }
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Welcome&lt;/h1&gt;
+    &lt;p&gt;This is a styled webpage.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+    <h3>Advantages of CSS</h3>
+    <ul>
+        <li>Improves the appearance of websites.</li>
+        <li>Separates content from presentation.</li>
+        <li>Reduces repeated styling code.</li>
+        <li>Makes website maintenance easier.</li>
+        <li>Supports responsive web design.</li>
+    </ul>
+
+    <hr>
+
+    <h2>10. Document Type Definition (DTD)</h2>
+
+    <p>DTD stands for Document Type Definition. It defines the legal structure, elements, attributes, and rules of an XML document. It specifies which elements can appear in a document, their order, and how they are related to each other.</p>
+
+    <p>DTD is used to ensure that an XML document follows a predefined structure and is properly organized.</p>
+
+    <h3>Types of DTD</h3>
+    <ol>
+        <li><strong>Internal DTD:</strong> Defined directly inside an XML document.</li>
+        <li><strong>External DTD:</strong> Stored in a separate file and linked to an XML document.</li>
+    </ol>
+
+    <h3>Example of Internal DTD</h3>
+    <pre><code>&lt;?xml version="1.0"?&gt;
+
+&lt;!DOCTYPE student [
+    &lt;!ELEMENT student (name, age)&gt;
+    &lt;!ELEMENT name (#PCDATA)&gt;
+    &lt;!ELEMENT age (#PCDATA)&gt;
+]&gt;
+
+&lt;student&gt;
+    &lt;name&gt;Rahul&lt;/name&gt;
+    &lt;age&gt;20&lt;/age&gt;
+&lt;/student&gt;</code></pre>
+
+    <h3>Advantages of DTD</h3>
+    <ul>
+        <li>Defines the structure of XML documents.</li>
+        <li>Ensures consistency in XML data.</li>
+        <li>Helps validate XML documents.</li>
+        <li>Defines permitted elements and attributes.</li>
+    </ul>
+
+    <hr>
+
+    <h2>11. Dynamic HTML (DHTML)</h2>
+
+    <p>Dynamic HTML (DHTML) is a combination of HTML, CSS, JavaScript, and DOM that makes web pages interactive and dynamic. It allows developers to change webpage content, style, and structure without reloading the complete page.</p>
+
+    <p>Unlike static HTML pages, DHTML pages can respond to user actions such as clicking buttons, moving the mouse, and entering information.</p>
+
+    <h3>Components of DHTML</h3>
+    <ol>
+        <li><strong>HTML:</strong> Provides webpage structure.</li>
+        <li><strong>CSS:</strong> Controls webpage design and layout.</li>
+        <li><strong>JavaScript:</strong> Adds dynamic behavior and interactivity.</li>
+        <li><strong>DOM:</strong> Allows access and modification of webpage elements.</li>
+    </ol>
+
+    <h3>Applications of DHTML</h3>
+    <ul>
+        <li>Interactive menus and navigation bars.</li>
+        <li>Animations and visual effects.</li>
+        <li>Dynamic forms and validation.</li>
+        <li>Interactive games and applications.</li>
+        <li>Changing webpage content without refreshing the page.</li>
+    </ul>
+
+    <h3>Advantages of DHTML</h3>
+    <ul>
+        <li>Improves user interaction.</li>
+        <li>Makes websites more attractive.</li>
+        <li>Provides dynamic content updates.</li>
+        <li>Reduces unnecessary page reloads.</li>
+    </ul>
+
+    <hr>
+
+    <h2>12. XML Schemas</h2>
+
+    <p>XML Schema, also known as XSD (XML Schema Definition), is used to define the structure, elements, attributes, and data types of an XML document. It specifies the rules that an XML document must follow to be considered valid.</p>
+
+    <p>Unlike DTD, XML Schema supports different data types such as string, integer, decimal, date, and Boolean. It is written using XML syntax.</p>
+
+    <h3>Features of XML Schema</h3>
+    <ol>
+        <li>Defines the structure of XML documents.</li>
+        <li>Supports built-in data types such as string, integer, and date.</li>
+        <li>Allows creation of custom data types.</li>
+        <li>Supports namespaces.</li>
+        <li>Defines the number and order of elements.</li>
+        <li>Provides strong data validation.</li>
+    </ol>
+
+    <h3>Example of XML Schema</h3>
+    <pre><code>&lt;xs:schema xmlns:xs=
+"http://www.w3.org/2001/XMLSchema"&gt;
+
+    &lt;xs:element name="student"&gt;
+        &lt;xs:complexType&gt;
+            &lt;xs:sequence&gt;
+
+                &lt;xs:element name="name"
+                type="xs:string"/&gt;
+
+                &lt;xs:element name="age"
+                type="xs:integer"/&gt;
+
+            &lt;/xs:sequence&gt;
+        &lt;/xs:complexType&gt;
+    &lt;/xs:element&gt;
+
+&lt;/xs:schema&gt;</code></pre>
+
+    <h3>Advantages of XML Schema</h3>
+    <ul>
+        <li>Provides accurate data validation.</li>
+        <li>Supports different data types.</li>
+        <li>Allows reusable data definitions.</li>
+        <li>Helps maintain consistency in XML documents.</li>
+    </ul>
+
+    <hr>
+
+    <h2>13. Object Models (DOM)</h2>
+
+    <p>DOM stands for Document Object Model. It is a programming interface that represents an HTML or XML document as a tree structure of objects. It allows programming languages such as JavaScript to access, modify, add, and delete elements and content of a webpage.</p>
+
+    <p>In DOM, every element, attribute, and text in a document is represented as a node. JavaScript uses DOM methods to interact with these nodes.</p>
+
+    <h3>Structure of DOM</h3>
+    <p>A DOM tree contains different types of nodes:</p>
+    <ul>
+        <li><strong>Document Node:</strong> Represents the complete document.</li>
+        <li><strong>Element Node:</strong> Represents HTML or XML elements.</li>
+        <li><strong>Attribute Node:</strong> Represents element attributes.</li>
+        <li><strong>Text Node:</strong> Represents text inside elements.</li>
+    </ul>
+
+    <h3>Important DOM Methods</h3>
+    <ul>
+        <li><strong>getElementById():</strong> Selects an element using its ID.</li>
+        <li><strong>getElementsByClassName():</strong> Selects elements using a class name.</li>
+        <li><strong>getElementsByTagName():</strong> Selects elements using a tag name.</li>
+        <li><strong>querySelector():</strong> Selects the first element matching a CSS selector.</li>
+        <li><strong>createElement():</strong> Creates a new element.</li>
+        <li><strong>appendChild():</strong> Adds a child node.</li>
+        <li><strong>removeChild():</strong> Removes a child node.</li>
+    </ul>
+
+    <h3>Example of DOM</h3>
+    <pre><code>&lt;html&gt;
+&lt;body&gt;
+
+&lt;p id="demo"&gt;Hello World&lt;/p&gt;
+
+&lt;button onclick="changeText()"&gt;
+    Change Text
+&lt;/button&gt;
+
+&lt;script&gt;
+function changeText() {
+    document.getElementById("demo").innerHTML =
+    "DOM Modified Successfully!";
+}
+&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+    <h3>Advantages of DOM</h3>
+    <ul>
+        <li>Allows dynamic modification of webpages.</li>
+        <li>Provides easy access to document elements.</li>
+        <li>Supports event handling.</li>
+        <li>Helps create interactive web applications.</li>
+    </ul>
+
+    <hr>
+
+    <h2>14. Presenting XML</h2>
+
+    <p>XML stands for Extensible Markup Language. It is a markup language used to store, organize, and transport structured data. XML allows users to create their own tags according to their requirements.</p>
+
+    <p>XML focuses on storing and describing data rather than displaying it. It is commonly used for data exchange between different applications and systems.</p>
+
+    <h3>Features of XML</h3>
+    <ol>
+        <li><strong>Extensible:</strong> Users can create their own tags.</li>
+        <li><strong>Platform Independent:</strong> XML works across different operating systems and applications.</li>
+        <li><strong>Self-Descriptive:</strong> Tags describe the meaning of the stored data.</li>
+        <li><strong>Structured:</strong> Data is organized in a hierarchical format.</li>
+        <li><strong>Readable:</strong> XML documents can be read by humans and machines.</li>
+    </ol>
+
+    <h3>Example of XML Document</h3>
+    <pre><code>&lt;?xml version="1.0"?&gt;
+
+&lt;student&gt;
+    &lt;name&gt;Rahul&lt;/name&gt;
+    &lt;age&gt;20&lt;/age&gt;
+    &lt;course&gt;BCA&lt;/course&gt;
+&lt;/student&gt;</code></pre>
+
+    <h3>Ways of Presenting XML</h3>
+    <ol>
+        <li><strong>CSS:</strong> XML data can be styled using CSS to control its appearance.</li>
+        <li><strong>XSLT:</strong> Extensible Stylesheet Language Transformations converts XML data into formats such as HTML or another XML document.</li>
+        <li><strong>XSL-FO:</strong> Used to format XML data for printed documents and PDF output.</li>
+    </ol>
+
+    <h3>Applications of XML</h3>
+    <ul>
+        <li>Data exchange between applications.</li>
+        <li>Web services and APIs.</li>
+        <li>Configuration files.</li>
+        <li>Document storage and data management.</li>
+        <li>Information sharing between different systems.</li>
+    </ul>
+
+    <hr>
+
+    <h2>15. Using XML Processors: DOM and SAX</h2>
+
+    <p>XML processors are software tools used to read, interpret, and process XML documents. They help applications access and extract information from XML files. Two commonly used XML processing methods are DOM (Document Object Model) and SAX (Simple API for XML).</p>
+
+    <h3>A. DOM (Document Object Model)</h3>
+
+    <p>DOM is an XML processing method that loads the entire XML document into memory and represents it as a tree structure. Each element, attribute, and text value is stored as a node. Applications can access, modify, add, or delete nodes as required.</p>
+
+    <h4>Features of DOM</h4>
+    <ul>
+        <li>Loads the complete XML document into memory.</li>
+        <li>Represents data in a tree structure.</li>
+        <li>Allows random access to different elements.</li>
+        <li>Supports modification of XML content.</li>
+        <li>Suitable for small and medium-sized XML documents.</li>
+    </ul>
+
+    <h3>B. SAX (Simple API for XML)</h3>
+
+    <p>SAX is an event-based XML processing method that reads an XML document sequentially from beginning to end. Instead of loading the entire document into memory, it generates events whenever it encounters elements, text, or other XML components.</p>
+
+    <h4>Features of SAX</h4>
+    <ul>
+        <li>Processes XML documents sequentially.</li>
+        <li>Does not load the entire document into memory.</li>
+        <li>Uses events to process XML data.</li>
+        <li>Consumes less memory compared to DOM.</li>
+        <li>Suitable for large XML documents.</li>
+    </ul>
+
+    <h3>Difference Between DOM and SAX</h3>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>DOM</th>
+                <th>SAX</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Tree-based processing.</td>
+                <td>Event-based processing.</td>
+            </tr>
+            <tr>
+                <td>Loads the entire document into memory.</td>
+                <td>Reads the document sequentially.</td>
+            </tr>
+            <tr>
+                <td>Requires more memory.</td>
+                <td>Requires less memory.</td>
+            </tr>
+            <tr>
+                <td>Allows random access to elements.</td>
+                <td>Provides sequential access.</td>
+            </tr>
+            <tr>
+                <td>Supports modifying document content.</td>
+                <td>Primarily used for reading and processing data.</td>
+            </tr>
+            <tr>
+                <td>Suitable for smaller XML files.</td>
+                <td>Suitable for large XML files.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <hr>
+
+    <h2>Important Revision Points</h2>
+
+    <ul>
+        <li><strong>JavaScript:</strong> Adds interactivity to web pages.</li>
+        <li><strong>JavaScript Objects:</strong> Store related data and methods.</li>
+        <li><strong>DHTML:</strong> Combines HTML, CSS, JavaScript, and DOM.</li>
+        <li><strong>Lists:</strong> Display related information in an organized manner.</li>
+        <li><strong>Tables:</strong> Display data in rows and columns.</li>
+        <li><strong>Images:</strong> Display visual content on webpages.</li>
+        <li><strong>Forms:</strong> Collect information from users.</li>
+        <li><strong>Frames:</strong> Display multiple documents within a browser window.</li>
+        <li><strong>CSS:</strong> Controls webpage appearance and layout.</li>
+        <li><strong>DTD:</strong> Defines the structure and rules of XML documents.</li>
+        <li><strong>XML Schema:</strong> Defines XML structure and data types.</li>
+        <li><strong>DOM:</strong> Represents documents as a tree of objects.</li>
+        <li><strong>XML:</strong> Stores and transports structured data.</li>
+        <li><strong>SAX:</strong> Processes XML documents using events.</li>
+    </ul>
+    </div>
+
+</section>
+
+
+        <!-- BOTTOM NAVIGATION -->
+        <div class="bottom-navigation">
+
+            <a href="unit1.html" class="back-btn">
+                ← Previous Unit
+            </a>
+
+            <a href="unit3.html" class="next-btn">
+                Next Unit →
+            </a>
+
+        </div>
+
+
+        <!-- FOOTER -->
+        <footer>
+            <h3>WebTech Study Notes</h3>
+            <p>Learn • Understand • Practice • Succeed</p>
+            <span>Unit 2 | JavaScript, CSS and XML</span>
+        </footer>
+
+    </main>
+
+</body>
+</html>

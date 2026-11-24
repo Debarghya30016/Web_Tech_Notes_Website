@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit 3 - Web Technology Notes</title>
+    <link rel="stylesheet" href="style/unit3.css">
+</head>
+<body>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <div class="logo">
+            <h2>WT Notes</h2>
+            <p>Web Technology</p>
+        </div>
+
+        <nav class="sidebar-nav">
+            <a href="index.html" class="nav-link">← Home</a>
+            <p class="nav-heading">UNIT 3 CONTENTS</p>
+
+            <a href="#topic1" class="nav-link">1. Introduction to Web Services</a>
+            <a href="#topic2" class="nav-link">2. UDDI</a>
+            <a href="#topic3" class="nav-link">3. SOAP</a>
+            <a href="#topic4" class="nav-link">4. WSDL</a>
+            <a href="#topic5" class="nav-link">5. Web Service Architecture</a>
+            <a href="#topic6" class="nav-link">6. Developing Web Services</a>
+            <a href="#topic7" class="nav-link">7. Deploying Web Services</a>
+            <a href="#topic8" class="nav-link">8. AJAX and Web Performance</a>
+            <a href="#topic9" class="nav-link">9. AJAX Programming</a>
+            <a href="#topic10" class="nav-link">10. CORBA</a>
+        </nav>
+
+        <div class="sidebar-bottom">
+            <p>Semester V</p>
+            <p>Study Notes</p>
+        </div>
+    </aside>
+
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+
+        <!-- PAGE HEADER -->
+        <header class="page-header">
+            <div>
+                <p class="breadcrumb">
+                    <a href="index.html">Home</a> / Unit 3
+                </p>
+                <h1>Unit 3: Web Services and AJAX</h1>
+                <p class="subtitle">
+                    Complete syllabus topics with space for your study notes.
+                </p>
+            </div>
+
+            <span class="unit-badge">UNIT 03</span>
+        </header>
+
+
+        <!-- INTRODUCTION -->
+        <section class="hero">
+            <span class="hero-label">WEB TECHNOLOGY</span>
+            <h2>Web Services, AJAX and CORBA</h2>
+            <p>
+                This unit covers web services and their architecture,
+                important web service technologies, AJAX programming,
+                and CORBA.
+            </p>
+        </section>
+
+
+        <!-- TABLE OF CONTENTS -->
+        <section class="content-card">
+            <div class="section-heading">
+                <span class="section-tag">OVERVIEW</span>
+                <h2>Table of Contents</h2>
+                <p>Select any topic to jump directly to its notes.</p>
+            </div>
+
+            <div class="toc-grid">
+                <a href="#topic1">01. Introduction to Web Services</a>
+                <a href="#topic2">02. UDDI</a>
+                <a href="#topic3">03. SOAP</a>
+                <a href="#topic4">04. WSDL</a>
+                <a href="#topic5">05. Web Service Architecture</a>
+                <a href="#topic6">06. Developing Web Services</a>
+                <a href="#topic7">07. Deploying Web Services</a>
+                <a href="#topic8">08. AJAX and Web Performance</a>
+                <a href="#topic9">09. AJAX Programming</a>
+                <a href="#topic10">10. CORBA</a>
+            </div>
+        </section>
+
+
+<!-- SINGLE NOTES SECTION -->
+<section class="topic-card" id="unit-notes">
+<section class="notes">
+
+    <h2>1. Introduction to Web Services</h2>
+
+    <p>Web Services are software systems that allow different applications to communicate and exchange data over a network. They enable communication between applications developed using different programming languages and running on different platforms.</p>
+
+    <p>Web services commonly use standard web technologies such as XML, HTTP, SOAP, WSDL and UDDI to exchange information.</p>
+
+    <h3>Features of Web Services</h3>
+    <ul>
+        <li><strong>Interoperability:</strong> Applications developed using different technologies can communicate with each other.</li>
+        <li><strong>Platform Independent:</strong> They can work across different operating systems and platforms.</li>
+        <li><strong>Reusability:</strong> A web service can be used by multiple applications.</li>
+        <li><strong>Loose Coupling:</strong> The client and service are independent of each other's internal implementation.</li>
+        <li><strong>Standard Protocols:</strong> They use common standards such as HTTP, XML and SOAP.</li>
+    </ul>
+
+    <h2>2. UDDI (Universal Description, Discovery and Integration)</h2>
+
+    <p>UDDI stands for Universal Description, Discovery and Integration. It is a standard that provides a directory where businesses and organizations can publish information about their web services. Other applications can search this directory to find available services.</p>
+
+    <p>UDDI helps service providers publish their services and allows service users to discover and access them.</p>
+
+    <h3>Main Components of UDDI</h3>
+    <ul>
+        <li><strong>White Pages:</strong> Contains basic information about a business, such as its name, address and contact details.</li>
+        <li><strong>Yellow Pages:</strong> Organizes businesses and services according to categories and industries.</li>
+        <li><strong>Green Pages:</strong> Provides technical information about services, including how to access them.</li>
+    </ul>
+
+    <h3>Working of UDDI</h3>
+    <ol>
+        <li>A service provider publishes information about its web service in the UDDI registry.</li>
+        <li>A service user searches the registry for the required service.</li>
+        <li>The user obtains the service description, usually through WSDL.</li>
+        <li>The application connects to the service and uses it.</li>
+    </ol>
+
+    <h2>3. SOAP (Simple Object Access Protocol)</h2>
+
+    <p>SOAP stands for Simple Object Access Protocol. It is a messaging protocol used for exchanging structured information between applications over a network. SOAP commonly uses XML to format messages and can work over protocols such as HTTP.</p>
+
+    <p>It allows applications developed using different programming languages and platforms to communicate with each other.</p>
+
+    <h3>Structure of a SOAP Message</h3>
+    <ul>
+        <li><strong>Envelope:</strong> The root element that identifies the XML document as a SOAP message.</li>
+        <li><strong>Header:</strong> Contains additional information such as authentication and message routing details. It is optional.</li>
+        <li><strong>Body:</strong> Contains the actual request or response information.</li>
+        <li><strong>Fault:</strong> Provides error information when a SOAP message cannot be processed. It appears inside the body.</li>
+    </ul>
+
+    <h3>Advantages of SOAP</h3>
+    <ul>
+        <li>Platform and language independent.</li>
+        <li>Uses XML for structured message exchange.</li>
+        <li>Supports security and reliable messaging extensions.</li>
+        <li>Can operate over multiple transport protocols.</li>
+    </ul>
+
+    <h2>4. WSDL (Web Services Description Language)</h2>
+
+    <p>WSDL stands for Web Services Description Language. It is an XML-based language used to describe the functions, operations, input parameters, output messages and communication protocols of a web service.</p>
+
+    <p>It helps client applications understand how to communicate with a web service without knowing its internal implementation.</p>
+
+    <h3>Main Elements of WSDL</h3>
+    <ul>
+        <li><strong>Types:</strong> Defines the data types used by the web service.</li>
+        <li><strong>Message:</strong> Describes the data exchanged between the client and the service.</li>
+        <li><strong>PortType:</strong> Defines the operations provided by the web service.</li>
+        <li><strong>Binding:</strong> Specifies the communication protocol and message format.</li>
+        <li><strong>Port:</strong> Defines the network address of a service endpoint.</li>
+        <li><strong>Service:</strong> Groups related endpoints of the web service.</li>
+    </ul>
+
+    <h3>Importance of WSDL</h3>
+    <ul>
+        <li>Describes how a web service works.</li>
+        <li>Provides information about available operations.</li>
+        <li>Defines input and output message formats.</li>
+        <li>Helps clients connect to web services correctly.</li>
+    </ul>
+
+    <h2>5. Web Service Architecture</h2>
+
+    <p>Web Service Architecture defines how different components interact to provide and use web services. It mainly consists of three roles: Service Provider, Service Requester and Service Registry.</p>
+
+    <h3>Main Components</h3>
+    <ul>
+        <li><strong>Service Provider:</strong> Creates and provides the web service.</li>
+        <li><strong>Service Requester:</strong> The client application that searches for and uses the web service.</li>
+        <li><strong>Service Registry:</strong> A directory where service providers publish service information and requesters discover services.</li>
+    </ul>
+
+    <h3>Three Main Operations</h3>
+    <ol>
+        <li><strong>Publish:</strong> The service provider publishes service information in the registry.</li>
+        <li><strong>Find:</strong> The service requester searches the registry to find the required service.</li>
+        <li><strong>Bind:</strong> The requester connects to the service provider and uses the service.</li>
+    </ol>
+
+    <h3>Technologies Used</h3>
+    <ul>
+        <li><strong>SOAP:</strong> Used for exchanging messages.</li>
+        <li><strong>WSDL:</strong> Used for describing web services.</li>
+        <li><strong>UDDI:</strong> Used for publishing and discovering web services.</li>
+        <li><strong>XML:</strong> Used for representing structured data.</li>
+        <li><strong>HTTP:</strong> Commonly used for transferring messages.</li>
+    </ul>
+
+    <h2>6. Developing and Deploying Web Services</h2>
+
+    <p>Developing a web service involves creating a software component that provides specific functionality over a network. Deploying a web service means making it available on a server so that client applications can access it.</p>
+
+    <h3>Steps in Developing Web Services</h3>
+    <ol>
+        <li><strong>Define Requirements:</strong> Identify the purpose and functions of the service.</li>
+        <li><strong>Design the Service:</strong> Define its operations, input and output data.</li>
+        <li><strong>Implement the Service:</strong> Write the program using a suitable programming language and framework.</li>
+        <li><strong>Create Service Description:</strong> Prepare a WSDL document describing the service.</li>
+        <li><strong>Test the Service:</strong> Check whether all operations work correctly.</li>
+    </ol>
+
+    <h3>Steps in Deploying Web Services</h3>
+    <ol>
+        <li>Choose a suitable web server or application server.</li>
+        <li>Install and configure the required software.</li>
+        <li>Deploy the web service application on the server.</li>
+        <li>Configure the service endpoint and network access.</li>
+        <li>Publish the service information if a registry is being used.</li>
+        <li>Test the deployed service from a client application.</li>
+    </ol>
+
+    <h2>7. Introduction to AJAX</h2>
+
+    <p>AJAX stands for Asynchronous JavaScript and XML. It is a web development technique used to exchange data with a server without reloading the entire web page.</p>
+
+    <p>AJAX allows web pages to update only the required part of their content. Although XML is included in its name, AJAX can also exchange data in formats such as JSON and plain text.</p>
+
+    <h3>Components of AJAX</h3>
+    <ul>
+        <li><strong>HTML and CSS:</strong> Used to create and style the web page.</li>
+        <li><strong>JavaScript:</strong> Controls the AJAX process and updates the page.</li>
+        <li><strong>XMLHttpRequest or Fetch API:</strong> Used to send requests and receive responses from the server.</li>
+        <li><strong>Server:</strong> Processes requests and sends data back to the browser.</li>
+        <li><strong>Data Format:</strong> Data can be exchanged using JSON, XML, HTML or plain text.</li>
+    </ul>
+
+    <h3>Working of AJAX</h3>
+    <ol>
+        <li>The user performs an action on a web page.</li>
+        <li>JavaScript sends an asynchronous request to the server.</li>
+        <li>The server processes the request.</li>
+        <li>The server sends a response to the browser.</li>
+        <li>JavaScript receives the response and updates the required part of the page.</li>
+    </ol>
+
+    <h2>8. Improving Web Page Performance Using AJAX</h2>
+
+    <p>AJAX improves web page performance by allowing data to be exchanged with the server in the background. Instead of refreshing the entire page, only the required section is updated.</p>
+
+    <h3>Ways AJAX Improves Performance</h3>
+    <ul>
+        <li><strong>Partial Page Updates:</strong> Only the necessary part of a page is refreshed.</li>
+        <li><strong>Reduced Data Transfer:</strong> The browser can request only the required information instead of downloading the entire page again.</li>
+        <li><strong>Asynchronous Communication:</strong> Users can continue interacting with the page while a request is being processed.</li>
+        <li><strong>Faster User Interaction:</strong> It supports features such as live search suggestions and dynamic form validation.</li>
+        <li><strong>Reduced Server Load:</strong> Efficient requests can avoid repeatedly generating and transferring complete pages.</li>
+    </ul>
+
+    <h3>Examples of AJAX</h3>
+    <ul>
+        <li>Live search suggestions while typing.</li>
+        <li>Loading new messages in a chat application.</li>
+        <li>Updating shopping cart details without refreshing the page.</li>
+        <li>Displaying notifications dynamically.</li>
+        <li>Checking form data in the background.</li>
+    </ul>
+
+    <h2>9. Programming in AJAX</h2>
+
+    <p>AJAX programming involves using JavaScript to send asynchronous requests to a server and process the response without reloading the web page. The XMLHttpRequest object is traditionally used for this purpose. Modern applications can also use the Fetch API.</p>
+
+    <h3>Basic Steps of AJAX Programming</h3>
+    <ol>
+        <li>Create an XMLHttpRequest object.</li>
+        <li>Open a connection to the server using the open() method.</li>
+        <li>Define a callback function to handle the response.</li>
+        <li>Send the request using the send() method.</li>
+        <li>Update the web page using the received response.</li>
+    </ol>
+
+    <h3>Example of AJAX Using JavaScript</h3>
+    <pre><code>
+function loadData() {
+    let xhttp = new XMLHttpRequest();
+
+    xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            document.getElementById("result").innerHTML =
+                this.responseText;
+        }
+    };
+
+    xhttp.open("GET", "data.txt", true);
+    xhttp.send();
+}
+    </code></pre>
+
+    <p>In this example, JavaScript sends a GET request to the server to retrieve data from data.txt. When the response is successfully received, the content of the element with the ID "result" is updated without reloading the entire page.</p>
+
+    <h3>Important XMLHttpRequest Properties</h3>
+    <ul>
+        <li><strong>readyState:</strong> Represents the current state of the request.</li>
+        <li><strong>status:</strong> Contains the HTTP status code returned by the server.</li>
+        <li><strong>responseText:</strong> Contains the response as text.</li>
+        <li><strong>responseXML:</strong> Contains the response as an XML document when applicable.</li>
+    </ul>
+
+    <h3>AJAX Ready States</h3>
+    <ul>
+        <li><strong>0 - UNSENT:</strong> The request has not been initialized.</li>
+        <li><strong>1 - OPENED:</strong> The request has been opened.</li>
+        <li><strong>2 - HEADERS_RECEIVED:</strong> The response headers have been received.</li>
+        <li><strong>3 - LOADING:</strong> The response is being received.</li>
+        <li><strong>4 - DONE:</strong> The request has been completed.</li>
+    </ul>
+
+    <h2>10. CORBA (Common Object Request Broker Architecture)</h2>
+
+    <p>CORBA stands for Common Object Request Broker Architecture. It is a standard developed by the Object Management Group (OMG) that allows software objects written in different programming languages and running on different platforms to communicate with each other.</p>
+
+    <p>CORBA uses an Object Request Broker (ORB) to manage communication between client and server objects. The ORB hides the details of network communication and allows objects to request services from other objects.</p>
+
+    <h3>Main Components of CORBA</h3>
+    <ul>
+        <li><strong>Object Request Broker (ORB):</strong> Acts as a communication manager between client and server objects.</li>
+        <li><strong>IDL (Interface Definition Language):</strong> Defines the interfaces and operations provided by an object.</li>
+        <li><strong>Client:</strong> Requests services from a remote object.</li>
+        <li><strong>Server Object:</strong> Provides the requested services.</li>
+        <li><strong>Object Adapter:</strong> Connects server objects with the ORB and helps manage their activation.</li>
+    </ul>
+
+    <h3>Working of CORBA</h3>
+    <ol>
+        <li>The client requests an operation from a remote object.</li>
+        <li>The ORB receives the request and locates the required object.</li>
+        <li>The request is transferred to the server object.</li>
+        <li>The server object executes the requested operation.</li>
+        <li>The result is returned to the client through the ORB.</li>
+    </ol>
+
+    <h3>Advantages of CORBA</h3>
+    <ul>
+        <li>Supports communication between different programming languages.</li>
+        <li>Provides platform-independent communication.</li>
+        <li>Supports distributed applications.</li>
+        <li>Hides the complexity of network communication.</li>
+        <li>Allows software components to be reused.</li>
+    </ul>
+
+    <h3>Applications of CORBA</h3>
+    <ul>
+        <li>Distributed enterprise applications.</li>
+        <li>Banking and financial systems.</li>
+        <li>Telecommunication systems.</li>
+        <li>Large-scale distributed software systems.</li>
+    </ul>
+
+    <h2>Important Revision Points</h2>
+    <ul>
+        <li><strong>Web Services:</strong> Enable communication between applications over a network.</li>
+        <li><strong>UDDI:</strong> Used to publish and discover web services.</li>
+        <li><strong>SOAP:</strong> XML-based messaging protocol.</li>
+        <li><strong>WSDL:</strong> Describes the operations and communication details of a web service.</li>
+        <li><strong>Web Service Architecture:</strong> Consists of service provider, service requester and service registry.</li>
+        <li><strong>AJAX:</strong> Allows asynchronous data exchange without reloading the entire page.</li>
+        <li><strong>XMLHttpRequest:</strong> Used to send and receive data asynchronously.</li>
+        <li><strong>CORBA:</strong> Enables communication between distributed objects using ORB.</li>
+    </ul>
+</section>
+</section>
+
+
+
+        <!-- PAGE NAVIGATION -->
+        <div class="page-navigation">
+            <a href="unit2.html" class="previous-btn">← Previous Unit</a>
+            <a href="unit4.html" class="next-btn">Next Unit →</a>
+        </div>
+
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <p>Web Technology Notes · Semester V</p>
+            <p>Unit 3 — Web Services and AJAX</p>
+        </footer>
+
+    </main>
+
+</body>
+</html>
